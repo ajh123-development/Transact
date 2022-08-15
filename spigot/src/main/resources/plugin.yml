@@ -1,0 +1,34 @@
+name: Transact
+version: '${project.version}'
+main: net.ddns.minersonline.Transact.spigot.Spigot
+api-version: 1.19
+softdepend: [ Vault ]
+authors: [ ajh123(MinecraftICT)(samuelh2005) ]
+description: A multi currencey, currencey!
+website: https://github.com/ajh123-development/Transact
+commands:
+  balance:
+    description: See your balance
+    usage: /balance
+    permission: transact.commands.balance
+    aliases: ["bal"]
+  newacc:
+    description: Create a new account
+    usage: /newacc
+    permission: transact.commands.newaccount
+    aliases: [ "new_account" ]
+  newcurr:
+    description: Create a new currency
+    usage: /newacc sybmbol name
+    permission: transact.commands.newcurrency
+    aliases: [ "new_currency" ]
+  currencies:
+    description: Lists currencies
+    usage: /currencies
+    permission: transact.commands.currencies
+    aliases: [ "currs" ]
+  accounts:
+    description: Lists accounts
+    usage: /accounts
+    permission: transact.commands.accounts
+    aliases: [ "accs" ]
